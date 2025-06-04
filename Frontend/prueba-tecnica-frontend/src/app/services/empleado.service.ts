@@ -16,4 +16,8 @@ export class EmpleadoService {
   obtenerEmpleados(): Observable<Empleado[]> {
     return this.http.get<Empleado[]>(this.API_URL);
   }
+
+  crearEmpleado(empleado: Empleado): Observable<Empleado> {
+    return this.http.post<Empleado>(this.API_URL, empleado);
+  }
 }
