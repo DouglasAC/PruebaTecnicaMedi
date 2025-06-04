@@ -1,0 +1,35 @@
+<h2 class="mb-4">Editar Empleado</h2>
+
+<form [formGroup]="empleadoForm" (ngSubmit)="actualizarEmpleado()" class="p-4 border rounded bg-light">
+
+    <div class="mb-3">
+        <label class="form-label">Nombre:</label>
+        <input type="text" formControlName="nombre" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Apellidos:</label>
+        <input type="text" formControlName="apellido" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Fecha de Nacimiento:</label>
+        <input type="date" formControlName="fechaNacimiento" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Género:</label>
+        <select formControlName="genero" class="form-select">
+            <option value="">Seleccione</option>
+            <option value="MASCULINO">Masculino</option>
+            <option value="FEMENINO">Femenino</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Número de Identificación:</label>
+        <input type="text" formControlName="numeroIdentificacion" class="form-control">
+    </div>
+
+    <button type="submit" [disabled]="empleadoForm.invalid" class="btn btn-primary">Actualizar</button>
+</form>

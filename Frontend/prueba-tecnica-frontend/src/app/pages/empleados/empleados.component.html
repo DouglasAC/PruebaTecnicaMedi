@@ -11,6 +11,7 @@
                 <th>Fecha Nacimiento</th>
                 <th>Género</th>
                 <th>Identificación</th>
+                <th>Editar</th>
             </tr>
         </thead>
         <tbody>
@@ -20,6 +21,11 @@
                 <td>{{ empleado.fechaNacimiento | date }}</td>
                 <td>{{ empleado.genero }}</td>
                 <td>{{ empleado.numeroIdentificacion }}</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" [routerLink]="['/empleados/editar', empleado.id]">
+                        <i class="bi bi-pencil"></i> Editar
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>

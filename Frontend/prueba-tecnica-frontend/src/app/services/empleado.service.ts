@@ -20,4 +20,13 @@ export class EmpleadoService {
   crearEmpleado(empleado: Empleado): Observable<Empleado> {
     return this.http.post<Empleado>(this.API_URL, empleado);
   }
+
+  obtenerEmpleadoPorId(id: number): Observable<Empleado> {
+    return this.http.get<Empleado>(`${this.API_URL}/${id}`);
+  }
+
+  actualizarEmpleado(id: number, empleado: Empleado): Observable<Empleado> {
+    return this.http.put<Empleado>(`${this.API_URL}/${id}`, empleado);
+  }
+
 }

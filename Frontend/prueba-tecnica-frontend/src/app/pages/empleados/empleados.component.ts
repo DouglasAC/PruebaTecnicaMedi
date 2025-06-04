@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { Empleado } from '../../models/empleado';
 import { EmpleadoService } from '../../services/empleado.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-empleados',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './empleados.component.html',
   styleUrl: './empleados.component.css'
 })
