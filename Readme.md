@@ -67,3 +67,26 @@ Los pipelines en CI/CD son flujos automatizados que permiten compilar, testear y
 Esto mejora la calidad del software, reduce errores humanos y acelera el ciclo de desarrollo.
 
 ---
+
+
+# Instrucciones para correr los proyectos
+
+1. Copiar el repositori:
+
+
+```bash
+  git clone https://github.com/DouglasAC/PruebaTecnicaMedi
+```
+
+## Para el Front-end
+
+1. Entrar en la carpeta \Frontend\prueba-tecnica-frontend
+2. Tener instalado nodejs y angular
+3. Correr el comando npm install
+4. Correr el comando ng serve
+
+## Para el Back-end desde el IDE
+
+1. Abrir el proyecto ubicado en Backend\PruebaTecnicaBackend
+2. Instalar las dependencias 
+3. Correr el proyecto
