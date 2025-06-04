@@ -48,9 +48,12 @@ public class SecurityConfig {
                 }))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
+
                         .requestMatchers("/api/auth/**").permitAll() // Permitir login sin token
-                        .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll() // Permitir Swagger
-                        .anyRequest().authenticated()
+                        .requestMatchers("/v3/api-docs/**",
+                                "/swagger-ui/**",
+                                "/swagger-ui.html").permitAll() // Permitir Swagger
+                        .anyRequest().permitAll()
                 )
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
