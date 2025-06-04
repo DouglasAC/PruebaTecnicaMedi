@@ -90,3 +90,18 @@ Esto mejora la calidad del software, reduce errores humanos y acelera el ciclo d
 1. Abrir el proyecto ubicado en Backend\PruebaTecnicaBackend
 2. Instalar las dependencias 
 3. Correr el proyecto
+
+## Imagenes de funcionamiento
+
+1. Pagina de inicio
+![Inicio](Imgs/01.png)
+2. Lista de empleados
+![Empleados](Imgs/02.png)
+3. Crear empleado
+![Crear empleado](Imgs/03.png)
+![Empleado creado](Imgs/04.png)
+4. Editar empleado
+![Editar](Imgs/05.png)
+![Editado](Imgs/06.png)
+5. Eliminar empleado
+![Eliminado](Imgs/07.png)
