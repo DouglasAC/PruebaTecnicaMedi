@@ -30,4 +30,12 @@ public class ExcepcionGlobalHandler {
         body.put("mensaje", ex.getMessage());
         return body;
     }
+
+    @ExceptionHandler(UsuarioNoEncontradoException.class)
+    public ResponseEntity<Object> manejarUsuarioNoEncontradoException(UsuarioNoEncontradoException ex) {
+        Map<String, Object> body = new HashMap<>();
+        body.put("mensaje", ex.getMessage());
+        body.put("timestamp", LocalDateTime.now());
+        return new ResponseEntity<>(body, HttpStatus.NOT_FOUND);
+    }
 }
