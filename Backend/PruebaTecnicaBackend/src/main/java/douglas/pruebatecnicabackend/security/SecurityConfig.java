@@ -52,7 +52,14 @@ public class SecurityConfig {
                         .requestMatchers("/api/auth/**").permitAll() // Permitir login sin token
                         .requestMatchers("/v3/api-docs/**",
                                 "/swagger-ui/**",
-                                "/swagger-ui.html").permitAll() // Permitir Swagger
+                                "/swagger-ui.html",
+                                "/swagger-ui/index.html",
+                                "/swagger-ui/swagger-initializer.js",
+                                "/swagger-ui/swagger-ui-bundle.js",
+                                "/swagger-ui/swagger-ui-standalone-preset.js",
+                                "/swagger-ui/index.css",
+                                "/swagger-ui/favicon.ico",
+                                "/webjars/**").permitAll() // Permitir Swagger
                         .anyRequest().permitAll()
                 )
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);

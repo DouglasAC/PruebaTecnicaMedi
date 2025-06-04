@@ -4,6 +4,7 @@ import douglas.pruebatecnicabackend.dtos.EmpleadoDTO;
 import douglas.pruebatecnicabackend.dtos.EmpleadoResponseDTO;
 import douglas.pruebatecnicabackend.services.EmpleadoService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -11,9 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/empleados")
 @CrossOrigin(origins = "*")
+@Tag(name = "Empleados", description = "API para gestión de empleados")
 public class EmpleadoController {
 
     private final EmpleadoService empleadoService;

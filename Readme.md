@@ -105,3 +105,9 @@ Esto mejora la calidad del software, reduce errores humanos y acelera el ciclo d
 ![Editado](Imgs/06.png)
 5. Eliminar empleado
 ![Eliminado](Imgs/07.png)
+
+## Intente la parte de Swagger pero no funciono
+
+No se que sea el error, asi aparece: 
+
+![Error](Imgs/error.png)
