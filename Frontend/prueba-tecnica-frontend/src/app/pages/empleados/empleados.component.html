@@ -11,7 +11,7 @@
                 <th>Fecha Nacimiento</th>
                 <th>Género</th>
                 <th>Identificación</th>
-                <th>Editar</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +25,9 @@
                     <a class="btn btn-primary btn-sm" [routerLink]="['/empleados/editar', empleado.id]">
                         <i class="bi bi-pencil"></i> Editar
                     </a>
+                    <button class="btn btn-danger btn-sm ms-2" (click)="eliminarEmpleado(empleado.id)">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
                 </td>
             </tr>
         </tbody>

@@ -19,7 +19,11 @@ export class EmpleadosComponent {
   constructor(private empleadoService: EmpleadoService) {}
 
   ngOnInit(): void {
-    this.empleadoService.obtenerEmpleados().subscribe({
+    this.obtenerEmpleados();
+  }
+
+  obtenerEmpleados(): void {
+   this.empleadoService.obtenerEmpleados().subscribe({
       next: (data) => {
         this.empleados = data;
         this.cargando = false;
@@ -30,5 +34,17 @@ export class EmpleadosComponent {
       }
     });
   }
+
+
+  eliminarEmpleado(id: number): void {
+  if (confirm('¿Estás seguro de eliminar este empleado?')) {
+    this.empleadoService.eliminarEmpleado(id).subscribe({
+      next: () => {
+        this.obtenerEmpleados();
+      },
+      error: (err) => console.error('Error al eliminar empleado', err)
+    });
+  }
+}
 
 }
