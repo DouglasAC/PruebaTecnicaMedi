@@ -89,7 +89,9 @@ Esto mejora la calidad del software, reduce errores humanos y acelera el ciclo d
 
 1. Abrir el proyecto ubicado en Backend\PruebaTecnicaBackend
 2. Instalar las dependencias 
-3. Correr el proyecto
+3. Ir al arcvivo application.properties
+    - Cambiar el usuario, constraseña y nombre de base de datos por una propia. (Debe ser una base de datos SQL Server)
+4. Correr el proyecto
 
 ## Imagenes de funcionamiento
 
