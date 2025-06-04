@@ -6,7 +6,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class EmpleadoResposeDTO {
+public class EmpleadoResponseDTO {
     private int id;
     private String nombre;
     private String apellido;
