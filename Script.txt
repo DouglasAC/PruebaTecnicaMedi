@@ -1,0 +1,14 @@
+CREATE TABLE Usuario (
+    id INT PRIMARY KEY IDENTITY,
+    username VARCHAR(50) PRIMARY KEY,
+    password VARCHAR(100)
+);
+
+CREATE TABLE Empleado (
+    id INT PRIMARY KEY IDENTITY,
+    nombre VARCHAR(100),
+    apellido VARCHAR(100),
+    fecha_nacimiento DATE,
+    genero VARCHAR(10),
+    numero_identificacion VARCHAR(50)
+);
