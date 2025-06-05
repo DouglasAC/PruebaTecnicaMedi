@@ -108,8 +108,23 @@ Esto mejora la calidad del software, reduce errores humanos y acelera el ciclo d
 5. Eliminar empleado
 ![Eliminado](Imgs/07.png)
 
-## Intente la parte de Swagger pero no funciono
+## Swagger
 
-No se que sea el error, asi aparece: 
+Tenia un error que la version de spring  boot 3.5.0, no todo es compatible, cambie de version a la 3.2.5 y ya me funciono
+
+Asi aparecia antes: 
 
 ![Error](Imgs/error.png)
+
+- Swager principal
+![Principal](Imgs/sw01.png)
+
+- Autenticación
+![Autenticacion](Imgs/sw02.png)
+
+- Empleados
+![EmpleadosSw](Imgs/sw03.png)
+
+- DTOS, request, response
+
+![Modelos](Imgs/sw04.png)

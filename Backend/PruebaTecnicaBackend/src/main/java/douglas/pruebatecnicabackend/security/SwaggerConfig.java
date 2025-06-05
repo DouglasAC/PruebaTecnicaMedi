@@ -11,7 +11,7 @@ public class SwaggerConfig {
         return GroupedOpenApi.builder()
                 .group("public-apis")
                 .packagesToScan(
-                        "douglas.pruebatecnicabackend.controllers"
+                        "douglas.pruebatecnicabackend.controller"
                 )
                 .pathsToMatch("/api/**")
                 .build();

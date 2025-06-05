@@ -1,4 +1,4 @@
-package douglas.pruebatecnicabackend.controllers;
+package douglas.pruebatecnicabackend.controller;
 
 import douglas.pruebatecnicabackend.dtos.LoginRequest;
 import douglas.pruebatecnicabackend.dtos.LoginResponse;

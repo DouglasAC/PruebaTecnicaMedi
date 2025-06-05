@@ -1,6 +1,5 @@
 package douglas.pruebatecnicabackend.controller;
 
-import douglas.pruebatecnicabackend.controllers.AuthController;
 import douglas.pruebatecnicabackend.dtos.LoginRequest;
 import douglas.pruebatecnicabackend.dtos.LoginResponse;
 import douglas.pruebatecnicabackend.services.AuthService;

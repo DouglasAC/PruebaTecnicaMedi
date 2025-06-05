@@ -1,4 +1,4 @@
-package douglas.pruebatecnicabackend.controllers;
+package douglas.pruebatecnicabackend.controller;
 
 import douglas.pruebatecnicabackend.dtos.EmpleadoDTO;
 import douglas.pruebatecnicabackend.dtos.EmpleadoResponseDTO;
@@ -7,7 +7,6 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
